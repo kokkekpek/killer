@@ -1,14 +1,15 @@
 {
   "name": "killer",
   "version": "1.0.0",
-  "description": "Listen process and emit event",
-  "main": "index.ts",
+  "description": "Killer listen process signals and emit kill event",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.org/kokkekpek/killer",
   "author": "Kok Kek <kokkekpek@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^14.0.14",
-    "logger": "kokkekpek/logger#^1",
+    "logger": "kokkekpek/logger#^1.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
@@ -18,6 +19,8 @@
     "ts-jest": "^26.1.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "example": "ts-node example/"
   }
 }
