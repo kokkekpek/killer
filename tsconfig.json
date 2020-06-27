@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "ES6",
     "moduleResolution": "Node",
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "tests"]
 }
