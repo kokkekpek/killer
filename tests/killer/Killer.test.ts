@@ -1,8 +1,8 @@
 import {EventEmitter} from 'events'
-import Killer from '../src/killer/Killer'
+import Killer from '../../src/killer/Killer'
 import {EmptyLogger, LoggerInterface} from 'logger'
-import ProcessEvents from '../src/killer/ProcessEvents'
-import KillerEvents from '../src/killer/KillerEvents'
+import ProcessEvents from '../../src/killer/ProcessEvents'
+import KillerEvents from '../../src/killer/KillerEvents'
 
 
 it('SIGINT', done => {
