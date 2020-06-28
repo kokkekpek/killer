@@ -5,7 +5,7 @@ import ProcessEvents from '../src/killer/ProcessEvents'
 import KillerEvents from '../src/killer/KillerEvents'
 
 
-it('Killer SIGINT', done => {
+it('SIGINT', done => {
     const logger: LoggerInterface = new EmptyLogger()
     const emitter: EventEmitter = new EventEmitter()
     const killer: Killer = new Killer(emitter, logger)
@@ -15,7 +15,7 @@ it('Killer SIGINT', done => {
     emitter.emit(ProcessEvents.SIGINT)
 })
 
-it('Killer SIGUSR1', done => {
+it('SIGUSR1', done => {
     const logger: LoggerInterface = new EmptyLogger()
     const emitter: EventEmitter = new EventEmitter()
     const killer: Killer = new Killer(emitter, logger)
@@ -25,7 +25,7 @@ it('Killer SIGUSR1', done => {
     emitter.emit(ProcessEvents.SIGUSR1)
 })
 
-it('Killer SIGUSR2', done => {
+it('SIGUSR2', done => {
     const logger: LoggerInterface = new EmptyLogger()
     const emitter: EventEmitter = new EventEmitter()
     const killer: Killer = new Killer(emitter, logger)
@@ -35,7 +35,7 @@ it('Killer SIGUSR2', done => {
     emitter.emit(ProcessEvents.SIGUSR2)
 })
 
-it('Killer UNCAUGHT_EXCEPTION', done => {
+it('UNCAUGHT_EXCEPTION', done => {
     const logger: LoggerInterface = new EmptyLogger()
     const emitter: EventEmitter = new EventEmitter()
     const killer: Killer = new Killer(emitter, logger)
