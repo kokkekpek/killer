@@ -52,7 +52,3 @@ Run example
 ```sh
 yarn example
 ````
-
-Check
-* log/actions.log
-* log/errors.log
