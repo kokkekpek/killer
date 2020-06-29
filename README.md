@@ -6,7 +6,7 @@ yarn add kokkekpek/killer#^1.0
 
 ## Use
 ```typescript
-import Killer, {KillerEvents} from '../'
+import Killer, {KillerEvents} from 'killer'
 import Logger, {LoggerInterface, ConfigInterface} from 'logger'
 
 const loggerConfig: ConfigInterface = {
